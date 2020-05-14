@@ -12,9 +12,9 @@ In CSV version - several files with adding a number after each.
 
 A use can be very simple:
 
-int m_exported = 0;
-Export2Exl XlUtil = new Export2Exl(PublicModule.sConnection);
-m_exported = XlUtil.ExportToExcel(dt);
+int m_exported = 0;<br>
+Export2Exl XlUtil = new Export2Exl(PublicModule.sConnection);<br>
+m_exported = XlUtil.ExportToExcel(dt);<br>
 
 this will open excel application and import a data into it.
 
