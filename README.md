@@ -1,10 +1,10 @@
 # Export2ExlEngine
 Export datatable/dataset to excel/csv file quickly
-A requirement for use - a get an IgalDAL project beforehand
+<b>A requirement for use - a get an IgalDAL project beforehand </b>
 
-The DLL has 2 classes - Export2Exl and Export2Csv.
+The DLL has 2 classes - <h3>Export2Exl</h3> and <h3>Export2Csv</h3>.
 Excel file is made especially to export large amounts of data in just a seconds.
-A prerequisite for  Export2Exl is Excel app and sql server. 
+<b>A prerequisite for  Export2Exl is Excel app and sql server. </b>
 Both classes can get a Datatable or DataSet. 
 Transferring a Dataset with several datatables in it will produce a same number of excel sheets. 
 The name of each sheet will be the same as a name of a DataTable.
