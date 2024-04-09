@@ -17,7 +17,7 @@ namespace Export2ExlEngine
         CSV
     }
 
-    internal static class Tools
+    public static class Tools
     {
         public static bool IsWriteable(this DirectoryInfo me)
         {
@@ -123,7 +123,10 @@ namespace Export2ExlEngine
                         break;
                     case "System.Guid":
                         sbTempTable.AppendLine($"[{col.ColumnName}] uniqueidentifier, ");
-                        break;                        
+                        break;
+                    case "System.Byte[]":
+                        sbTempTable.AppendLine($"[{col.ColumnName}] binary,");
+                        break;
                     default:
                         throw new Exception($"No definition for column type {col.DataType.ToString()}");
                 }
